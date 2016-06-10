@@ -449,6 +449,7 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
+  background: #e83733;
   color: white;
 }
 header .container {
