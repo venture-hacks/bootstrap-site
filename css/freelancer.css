@@ -434,7 +434,6 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #e83733;
   color: white;
 }
 hr.star-primary {
