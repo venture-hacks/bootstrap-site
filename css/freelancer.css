@@ -48,8 +48,13 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #3396d8;
   color: white;
+}
+.red-star:after {
+    background-color: #e83733;
+}
+.blue-star:after {
+    background-color: #3396d8;
 }
 hr.star-primary {
   border-color: #2C3E50;
