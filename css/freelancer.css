@@ -773,3 +773,19 @@ footer .footer-below {
   opacity: 0;
   display: none;
 }
+.table{
+  text-align: left;
+}
+
+col:nth-child(odd){
+  background-color: rgba(255,255,255,.12)
+}
+col:nth-child(even){
+  background-color: rgba(255,255,255,.05)
+}
+.table thead{
+  border-bottom: solid 1px rgba(255,255,255,.5);
+}
+#appLink{
+  font-size: 25px;
+}
