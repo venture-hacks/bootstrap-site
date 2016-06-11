@@ -811,3 +811,9 @@ max-height: 200px;
 margin: auto;
 text-align: center;
 }
+.navbar-default .navbar-nav>.active>a{
+background-color: #343432;
+}
+.navbar-default .navbar-nav>.active>a:last-child{
+  background-color: #343432;
+}
