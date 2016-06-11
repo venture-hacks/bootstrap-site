@@ -789,3 +789,11 @@ col:nth-child(even){
 #appLink{
   font-size: 25px;
 }
+
+.navbar-default .navbar-nav > li > a:hover{
+  color: #e83733;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
+  color: #e83733;
+}
