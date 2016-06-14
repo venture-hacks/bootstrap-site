@@ -1,7 +1,9 @@
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #e83733;
 }
-
+.white-text {
+  color: white;
+}
 body {
   overflow-x: hidden;
 }
