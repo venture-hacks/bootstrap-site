@@ -826,3 +826,19 @@ background-color: #343432;
 .navbar-default .navbar-nav>.active>a:last-child{
   background-color: #343432;
 }
+.apply_btn{
+  border: solid 3px white; 
+  padding: 10px 35px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+}
+.apply_btn:hover{
+  opacity: .8;
+  text-decoration: none;
+  color: white;
+}
+
+.apply_btn b:hover{
+  color:  white;
+  text-decoration: none;
+}
