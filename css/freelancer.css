@@ -4,6 +4,9 @@
 .white-text {
   color: white;
 }
+.button {
+  border: white 1px;
+}
 body {
   overflow-x: hidden;
 }
