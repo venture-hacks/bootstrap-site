@@ -1,6 +1,11 @@
+/*lolol howto overwrite: a css session */
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #e83733;
 }
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: #e83733;
+}
+
 .white-text {
   color: white;
 }
@@ -412,7 +417,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #e83733;
+  color: #2c3e50;
   outline: none;
 }
 h1,
