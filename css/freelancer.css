@@ -804,6 +804,10 @@ col:nth-child(even){
 #appLink{
   font-size: 25px;
 }
+#ideasLink{
+  color: white;
+  font-size: 25px;
+}
 
 .navbar-default .navbar-nav > li > a:hover{
   color: #e83733;
@@ -832,7 +836,7 @@ background-color: #343432;
   background-color: #343432;
 }
 .apply_btn{
-  border: solid 3px white; 
+  border: solid 3px white;
   padding: 10px 35px;
   padding-bottom: 15px;
   border-radius: 10px;
