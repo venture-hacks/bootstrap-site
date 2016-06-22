@@ -5,7 +5,11 @@
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
   color: #e83733;
 }
-
+.video{
+  width: 75%;
+  min-width: 400px;
+  max-width: 705px;
+}
 .white-text {
   color: white;
 }
