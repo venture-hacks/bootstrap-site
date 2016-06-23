@@ -2,3 +2,24 @@ header{
     background-image: url("../img/bg.jpg");
     background-position: bottom; 
 }
+
+.wrapper{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.blue_fill{
+    background-color: #3396d8;
+    border: none;
+}
+
+section.success{
+        background: #3396d8;
+}
+
+#venture{
+    background-image: url("../img/venture_center.jpg");
+    background-size: 100%;
+    background-position: bottom;
+}
