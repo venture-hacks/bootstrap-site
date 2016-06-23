@@ -1,0 +1,25 @@
+{
+  "name": "Venture Hacks",
+  "homepage": "https://github.com/venture-hacks/bootstrap-site",
+  "authors": [
+    "<austin.cawley@gmail.com>",
+    "<fbueti@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "keywords": [
+    "Revolution"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "autotrack": "https://github.com/austincawley/autotrack.git#^0.6.5"
+  }
+}
