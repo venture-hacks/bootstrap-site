@@ -850,12 +850,25 @@ background-color: #343432;
   text-decoration: none;
   color: white;
 }
-
 .apply_btn b:hover{
   color:  white;
   text-decoration: none;
 }
-
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
   color: #3396d8;
+}
+.apply_btn_blue{
+  border: solid 3px #2c3e50;
+  padding: 10px 35px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+}
+.apply_btn_blue:hover{
+  opacity: .8;
+  text-decoration: none;
+  color: #2c3e50;
+}
+.apply_btn_blue b:hover{
+  color:  #2c3e50;
+  text-decoration: none;
 }
