@@ -3,7 +3,7 @@
   color: #e83733;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-  color: #e83733;
+  color: #3396d8;
 }
 .video{
   width: 75%;
@@ -134,7 +134,6 @@ header .intro-text .skills {
     transition: all 0.3s;
   }
   .navbar-fixed-top.navbar-shrink {
-    background-color: #343432;
     padding: 10px 0;
   }
   .navbar-fixed-top.navbar-shrink .navbar-brand {
@@ -815,11 +814,11 @@ col:nth-child(even){
 }
 
 .navbar-default .navbar-nav > li > a:hover{
-  color: #e83733;
+  color: #3396d8;
 }
 
 .navbar-default{
-background-color: transparent;
+background-color: #343432;
 }
 
 .logo{
@@ -855,4 +854,8 @@ background-color: #343432;
 .apply_btn b:hover{
   color:  white;
   text-decoration: none;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
+  color: #3396d8;
 }

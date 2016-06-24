@@ -23,3 +23,12 @@ section.success{
     background-size: 100%;
     background-position: bottom;
 }
+
+.navbar-default{
+background-color: transparent;
+}
+@media (min-width: 768px) {
+  .navbar-fixed-top.navbar-shrink {
+    background-color: #343432;
+  }
+}
