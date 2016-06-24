@@ -134,6 +134,7 @@ header .intro-text .skills {
     transition: all 0.3s;
   }
   .navbar-fixed-top.navbar-shrink {
+    background-color: #343432;
     padding: 10px 0;
   }
   .navbar-fixed-top.navbar-shrink .navbar-brand {
@@ -818,7 +819,7 @@ col:nth-child(even){
 }
 
 .navbar-default{
-background-color: #343432;
+background-color: transparent;
 }
 
 .logo{
