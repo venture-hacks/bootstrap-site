@@ -23,6 +23,11 @@ section.success{
     background-image: url("../img/venture_center.jpg");
     background-size: 100%;
     background-position: bottom;
+    background-repeat: no-repeat;
+   -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
 }
 
 .navbar-default{
