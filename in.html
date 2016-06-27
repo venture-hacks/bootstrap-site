@@ -2,9 +2,9 @@
 <html>
     <head>
         <title> In </title>
-    
+
         <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        
+
         <style>
         *{
             margin: 0;
@@ -28,7 +28,7 @@
         }
         #basically_the_answer{
             opacity: 1.0;
-            background-color: rgba(51, 150, 216, 1);
+            background-color: rgb(52,152,219);
             width: 200px;
             height: 200px;
             margin-top: 30px;
@@ -93,8 +93,12 @@
             -ms-user-select: text;
             user-select: text;
         }
-        a::-moz-selection { color: #3396d8}
-        a::selection { color: #3396d8; }
+        a::-moz-selection {
+            color: rgb(52,152,219);
+        }
+        a::selection {
+            color: rgb(52,152,219);
+        }
           .outer {
         display: table;
         position: absolute;
@@ -109,10 +113,10 @@
 
     .inner {
         margin-left: auto;
-        margin-right: auto; 
+        margin-right: auto;
         text-align: center;
         width: 90%;
-    }  
+    }
         </style>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
@@ -130,11 +134,12 @@
                 $("footer").fadeIn(1500)
             })
             $( "form" ).submit(function( event ) {
-                event.preventDefault()
-                if($("input").val() == "3396d8"){
+                event.preventDefault();
+                var enteredRgb = hexToRgb($("input").val());
+                if(enteredRgb && enteredRgb.r == 52 && enteredRgb.g == 152 && enteredRgb.b == 219){
                     $("#puzzle").hide()
                     $("footer").hide()
-                    $("body").css("background-color", "#3396d8");
+                    $("body").css("background-color", "rgb(52,152,219)");
                     $("#win").fadeIn()
                 }
                 else{
@@ -143,17 +148,27 @@
                 }
             })
         });
+
+        // Lolol good luck
+        function hexToRgb(hex) {
+            var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+            return result ? {
+                r: parseInt(result[1], 16),
+                g: parseInt(result[2], 16),
+                b: parseInt(result[3], 16)
+            } : null;
+        }
         </script>
-        
+
     </head>
-    
+
     <body>
         <div class="outer">
         <div class="middle">
         <div class="inner">
                 <h1 id="first"> Space is limited. </h1>
                 <h1 id="second"> Is there another way in? </h1>
-            <div id="win">    
+            <div id="win">
             <h1> Congrats. You did it. We like you. </h1>
                 <p style="font-size: 2vw; float: none;">E-mail hello@venturehacks.xyz with the solution to gain entry to Venture Hacks.</p>
                 </div>
@@ -170,7 +185,7 @@
         <footer >
             <p>Confused? Intrigued? <a href="mailto:hello@venturehacks.xyz" target="_blank">
                                 hello@venturehacks.xyz
-                            </a> <br> 
+                            </a> <br>
 </p>
         </footer>
     </body>
