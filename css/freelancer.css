@@ -71,6 +71,9 @@ hr.star-light:after {
 .red-star:after {
     background-color: #e83733;
 }
+.gray-star:after {
+    background-color: #343432;
+}
 .blue-star:after {
     background-color: #3396d8;
 }
@@ -871,4 +874,12 @@ background-color: #343432;
 .apply_btn_blue b:hover{
   color:  #2c3e50;
   text-decoration: none;
+}
+#mentors{
+  background-color: #343432;
+  color: white;
+}
+.person{
+  text-transform: capitalize !important;
+  font-weight: bold;
 }
