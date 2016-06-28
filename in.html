@@ -135,8 +135,8 @@
             })
             $( "form" ).submit(function( event ) {
                 event.preventDefault();
-                var enteredRgb = hexToRgb($("input").val());
-                if(enteredRgb && enteredRgb.r == 52 && enteredRgb.g == 152 && enteredRgb.b == 219){
+                var huh = whatsThis($("input").val());
+                if(huh && huh.x == 52 && huh.y == 152 && huh.z == 219){
                     $("#puzzle").hide()
                     $("footer").hide()
                     $("body").css("background-color", "rgb(52,152,219)");
@@ -149,13 +149,13 @@
             })
         });
 
-        // Lolol good luck
-        function hexToRgb(hex) {
-            var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        // Hey. You. Whacha up to.
+        function whatsThis(yourGrandmasEmailPassword) {
+            var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(yourGrandmasEmailPassword);
             return result ? {
-                r: parseInt(result[1], 16),
-                g: parseInt(result[2], 16),
-                b: parseInt(result[3], 16)
+                x: parseInt(result[1], 16),
+                y: parseInt(result[2], 16),
+                z: parseInt(result[3], 16)
             } : null;
         }
         </script>
