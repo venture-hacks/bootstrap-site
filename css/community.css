@@ -39,3 +39,7 @@ section.success{
     background-color: #343432;
   }
 }
+
+iframe{
+    max-width: 90%;
+}
