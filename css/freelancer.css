@@ -825,6 +825,7 @@ background-color: #343432;
 }
 
 .logo{
+  width: 80%;
   max-width: 350px;
 }
 
@@ -880,6 +881,30 @@ background-color: #343432;
   color: white;
 }
 .person{
-  text-transform: capitalize !important;
-  font-weight: bold;
+  font-size: 1.3em;
+}
+.mentor{
+  opacity: .5 !important;
+  cursor: pointer;
+}
+.selected_mentor{
+  opacity: 1 !important;
+}
+#mentor_desc{
+  display: block;
+}
+.mentor_des_mobile{
+    display: none;
+  }
+@media (max-width: 767px) {
+  #mentor_desc{
+  display: none;
+}
+  .mentor_des_mobile{
+    display: block;
+  }
+  .mentor{
+  opacity: 1 !important;
+  cursor: default;
+}
 }
