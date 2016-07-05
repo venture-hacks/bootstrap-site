@@ -47,41 +47,6 @@
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
-        <script>
-        $(document).ready(function(){
-            $("#zach").css("height", $("#kevin").height() + "px")
-            $( window ).resize(function() {
-            $("#zach").css("height", $("#kevin").height() + "px")
-})
-            var francesca = "Francesca is a rising junior at Stevens Institute of Technology studying computer science. She is also one of the hosts of Venture Hacks and also previously a co-founder of a tech startup in the trucking industry. On campus, she has served as the Google Student Ambassador, president of the Women in Computer Science Club and secretary of Delta Phi Epsilon."
-            var austin = "Don’t let the suit fool you; Austin is a relaxed Junior at Stevens Institute of Technology studying Computer Science. He is one of the hosts of Venture Hacks and previously has been the co-founder of a tech startup in the trucking industry. A Vermont native, he loves gardening and climbing trees. He is currently doing research modeling bomb explosions and 3d rendering. Web frameworks and REST Apis are his bread and butter. Also, he likes bread and butter. His #1 favorite company of all time is Airbnb."
-            var kevin = "Kevin is a technology-centric entrepreneur with a passion for creating highly scalable, performant systems for a broad range of applications. Kevin excels at designing and building full scale architectures, centered on the key areas of stability, redundancy, performance, and scalability. After starting his first company as a sophomore at Stevens Institute of Technology, he joined Fintech Studios as CTO, where he brings experience in leading edge machine learning and ‘big data’ analytics."
-            var zach = "Zack is an iOS Developer with 7 published iPhone apps, 2 published iPad apps that together have received over 25,000 downloads and are used by various a-list celebrities and musicians. He is a rising Junior at Stevens and studying Computer Science (shocker?)."
-        $( "#austin" ).click(function() {
-              $('#mentor_desc').text(austin)
-              $(".mentor").removeClass( "selected_mentor" )
-              $("#austin").addClass( "selected_mentor" )
-        });
-        $( "#francesca" ).click(function() {
-              $('#mentor_desc').text(francesca)
-              $(".mentor").removeClass( "selected_mentor" )
-              $("#francesca").addClass( "selected_mentor" )
-
-        });
-        $( "#kevin" ).click(function() {
-              $('#mentor_desc').text(kevin)
-              $(".mentor").removeClass( "selected_mentor" )
-              $("#kevin").addClass( "selected_mentor" )
-        });
-        $( "#zach" ).click(function() {
-              $('#mentor_desc').text(zach)
-              $(".mentor").removeClass( "selected_mentor" )
-              $("#zach").addClass( "selected_mentor" )
-        });
-        });
-          
-
-        </script>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -356,7 +321,7 @@
                         <img src="img/zack.png" class="img-responsive circle-img" alt="" height="211">
                     <h1 class="text-center person">Zach </h1>
                                 <p class="mentor_des_mobile text-center">
-                Zack is an iOS Developer with 7 published iPhone apps, 2 published iPad apps that together have received over 25,000 downloads and are used by various a-list celebrities and musicians. He is a rising Junior at Stevens and studying Computer Science (shocker?).</p>
+                Zach is an iOS Developer with 7 published iPhone apps and 2 published iPad apps that together have received over 25,000 downloads and are used by various A-list celebrities and musicians. He is a rising Junior at Stevens and studying Computer Science (shocker?).</p>
 
               </div>
               <p id="mentor_desc" class="text-center" style="margin-top: 50px">
@@ -523,7 +488,44 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
+        <script>
+        $(window).load(function() {
+            $("#zach").css("height", $("#kevin").height() + "px")
+        });
+        $(document).ready(function(){
+            $("#zach").css("height", $("#kevin").height() + "px")
+            $( window ).resize(function() {
+            $("#zach").css("height", $("#kevin").height() + "px")
+})
+            var francesca = "Francesca is a rising junior at Stevens Institute of Technology studying computer science. She is also one of the hosts of Venture Hacks and also previously a co-founder of a tech startup in the trucking industry. On campus, she has served as the Google Student Ambassador, president of the Women in Computer Science Club and secretary of Delta Phi Epsilon."
+            var austin = "Don’t let the suit fool you; Austin is a relaxed Junior at Stevens Institute of Technology studying Computer Science. He is one of the hosts of Venture Hacks and previously has been the co-founder of a tech startup in the trucking industry. A Vermont native, he loves gardening and climbing trees. He is currently doing research modeling bomb explosions and 3d rendering. Web frameworks and REST Apis are his bread and butter. Also, he likes bread and butter. His #1 favorite company of all time is Airbnb."
+            var kevin = "Kevin is a technology-centric entrepreneur with a passion for creating highly scalable, performant systems for a broad range of applications. Kevin excels at designing and building full scale architectures, centered on the key areas of stability, redundancy, performance, and scalability. After starting his first company as a sophomore at Stevens Institute of Technology, he joined Fintech Studios as CTO, where he brings experience in leading edge machine learning and ‘big data’ analytics."
+            var zach = "Zach is an iOS Developer with 7 published iPhone apps and 2 published iPad apps that together have received over 25,000 downloads and are used by various A-list celebrities and musicians. He is a rising Junior at Stevens and studying Computer Science (shocker?)."
+        $( "#austin" ).click(function() {
+              $('#mentor_desc').text(austin)
+              $(".mentor").removeClass( "selected_mentor" )
+              $("#austin").addClass( "selected_mentor" )
+        });
+        $( "#francesca" ).click(function() {
+              $('#mentor_desc').text(francesca)
+              $(".mentor").removeClass( "selected_mentor" )
+              $("#francesca").addClass( "selected_mentor" )
 
+        });
+        $( "#kevin" ).click(function() {
+              $('#mentor_desc').text(kevin)
+              $(".mentor").removeClass( "selected_mentor" )
+              $("#kevin").addClass( "selected_mentor" )
+        });
+        $( "#zach" ).click(function() {
+              $('#mentor_desc').text(zach)
+              $(".mentor").removeClass( "selected_mentor" )
+              $("#zach").addClass( "selected_mentor" )
+        });
+        });
+          
+
+        </script>
 </body>
 
 </html>
