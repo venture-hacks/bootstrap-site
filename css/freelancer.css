@@ -5,6 +5,16 @@
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
   color: #3396d8;
 }
+#stevens{
+    background-image: url("../img/venture_center.jpg");
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+   -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+}
 .video{
   width: 75%;
   min-width: 400px;
@@ -898,13 +908,13 @@ background-color: #343432;
   }
 @media (max-width: 767px) {
   #mentor_desc{
-  display: none;
-}
+    display: none;
+  }
   .mentor_des_mobile{
     display: block;
   }
   .mentor{
-  opacity: 1 !important;
-  cursor: default;
-}
+    opacity: 1 !important;
+    cursor: default;
+  }
 }
