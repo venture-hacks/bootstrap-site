@@ -182,14 +182,7 @@ section.success {
   background: #3396d8;
   color: white;
 }
-section.success a,
-section.success a:hover,
-section.success a:focus,
-section.success a:active,
-section.success a.active {
-  color: #2C3E50;
-  outline: none;
-}
+
 @media (max-width: 767px) {
   section {
     padding: 75px 0;
@@ -807,12 +800,6 @@ footer .footer-below {
   text-align: left;
 }
 
-col:nth-child(odd){
-  background-color: rgba(255,255,255,.12)
-}
-col:nth-child(even){
-  background-color: rgba(255,255,255,.05)
-}
 .table thead{
   font-size: 20px;
     text-decoration: underline;
@@ -870,11 +857,12 @@ background-color: #343432;
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
   color: #3396d8;
 }
-.apply_btn_blue{
-  border: solid 3px #2c3e50;
+.apply_btn_white{
+  border: solid 3px white;
   padding: 10px 35px;
-  padding-bottom: 15px;
+  padding-bottom: 15px;;
   border-radius: 10px;
+  color: white
 }
 .apply_btn_blue:hover{
   opacity: .8;
@@ -941,4 +929,31 @@ background-color: #343432;
     .navbar-header {
         float:none;
     }
+}
+td{
+  color: #737373;
+}
+td.time{
+  text-align: right;
+  color: #3396d8;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+td h1{
+  font-size: 1.2em;
+  color: #262626;
+  margin-top: 5px;
+}
+#schedule h2{
+  color: #3396d8;
+}
+#schedule{
+  background-color: white;
+}
+#apply{
+  background-color: #3396d8
+}
+
+table{
+  margin: auto;
 }
