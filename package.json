@@ -1,13 +1,8 @@
 {
-  "name": "buzzdine",
-  "version": "1.0.0",
-  "author": "austin <austin.cawley@gmail.com>",
+  "name": "venturehacks",
+  "version": "2.0.0",
+  "author": "austin <austin.cawley@gmail.com>, francesca <fbueti@gmail.com>",
   "scripts": {
-    "lint": "node_modules/.bin/gulp lint",
-    "prebuild": "npm run lint",
-    "build": "node_modules/.bin/gulp build",
-    "predeploy": "npm run build",
-    "deploy": "firebase deploy"
   },
   "devDependencies": {
     "browser-sync": "^2.13.0",
@@ -31,6 +26,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/austincawley/contracted-buzzdine.git"
+    "url": "https://github.com/venturehacks/bootstrap-site.git"
   }
 }
