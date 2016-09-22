@@ -9,7 +9,6 @@ const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 const sourcemaps = require('gulp-sourcemaps');
 const usemin = require('gulp-usemin');
-const rev = require('gulp-rev');
 
 // Set the banner content
 const banner = ['/*!\n',
