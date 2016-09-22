@@ -938,6 +938,7 @@ td.time{
   color: #3396d8;
   font-weight: bold;
   font-size: 1.2em;
+  width: 150px;
 }
 td h1{
   font-size: 1.2em;
@@ -956,4 +957,8 @@ td h1{
 
 table{
   margin: auto;
+}
+.location{
+  color: #666666;
+  font-size: 11pt;
 }
