@@ -1,0 +1,36 @@
+{
+  "name": "buzzdine",
+  "version": "1.0.0",
+  "author": "austin <austin.cawley@gmail.com>",
+  "scripts": {
+    "lint": "node_modules/.bin/gulp lint",
+    "prebuild": "npm run lint",
+    "build": "node_modules/.bin/gulp build",
+    "predeploy": "npm run build",
+    "deploy": "firebase deploy"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb-base": "^7.1.0",
+    "eslint-plugin-import": "^1.14.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-eslint": "^3.0.1",
+    "gulp-header": "^1.8.7",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^7.1.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-scss-lint": "^0.4.0",
+    "gulp-sequence": "^0.4.6",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4",
+    "gulp-usemin": "^0.3.24"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/austincawley/contracted-buzzdine.git"
+  }
+}
