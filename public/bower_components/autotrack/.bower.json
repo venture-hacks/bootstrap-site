@@ -10,5 +10,5 @@
   },
   "_source": "https://github.com/googleanalytics/autotrack.git",
   "_target": "^0.6.5",
-  "_originalSource": "autotrack"
+  "_originalSource": "https://github.com/googleanalytics/autotrack.git"
 }
