@@ -3,7 +3,7 @@
   color: #e83733;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-  color: #00a63f;
+  color: #3396d8;
 }
 #community{
     background-image: url("../img/bg.jpg");
@@ -40,7 +40,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #00a63f;
+  color: #3396d8;
   outline: none;
 }
 h1,
@@ -85,7 +85,7 @@ hr.star-light:after {
     background-color: #343432;
 }
 .blue-star:after {
-    background-color: #00a63f;
+    background-color: #3396d8;
 }
 hr.star-primary {
   border-color: #2C3E50;
@@ -99,7 +99,7 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #00a63f;
+  background: #3396d8;
   color: white;
 }
 header .container {
@@ -179,7 +179,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #00a63f;
+  background: #3396d8;
   color: white;
 }
 
@@ -202,7 +202,7 @@ section.success {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
-  background: #00a63f;
+  background: #3396d8;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -466,11 +466,11 @@ hr.star-light:after {
   color: white;
 }
 hr.star-primary {
-  border-color: #00a63f;
+  border-color: #3396d8;
 }
 hr.star-primary:after {
   background-color: white;
-  color: #00a63f;
+  color: #3396d8;
 }
 .img-centered {
   margin: 0 auto;
@@ -563,7 +563,7 @@ section.success a:hover,
 section.success a:focus,
 section.success a:active,
 section.success a.active {
-  color: #00a63f;
+  color: #3396d8;
   outline: none;
 }
 @media (max-width: 767px) {
@@ -695,7 +695,7 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: #00a63f;
+  background-color: #3396d8;
 }
 footer .footer-col {
   margin-bottom: 50px;
@@ -773,7 +773,7 @@ footer .footer-below {
   height: 75px;
   width: 1px;
   margin-left: 35px;
-  background-color: #00a63f;
+  background-color: #3396d8;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -784,7 +784,7 @@ footer .footer-below {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #00a63f;
+  background-color: #3396d8;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
@@ -813,7 +813,7 @@ footer .footer-below {
 }
 
 .navbar-default .navbar-nav > li > a:hover{
-  color: #00a63f;
+  color: #3396d8;
 }
 
 .navbar-default{
@@ -855,7 +855,7 @@ background-color: #343432;
   text-decoration: none;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
-  color: #00a63f;
+  color: #3396d8;
 }
 .apply_btn_white{
   border: solid 3px white;
@@ -935,7 +935,7 @@ td{
 }
 td.time{
   text-align: right;
-  color: #00a63f;
+  color: #3396d8;
   font-weight: bold;
   font-size: 1.2em;
   width: 150px;
@@ -948,13 +948,13 @@ td h1{
   margin-top: 5px;
 }
 #schedule h2{
-  color: #00a63f;
+  color: #3396d8;
 }
 #schedule{
   background-color: white;
 }
 #apply{
-  background-color: #00a63f
+  background-color: #3396d8
 }
 
 table{
@@ -963,8 +963,4 @@ table{
 .location{
   color: #666666;
   font-size: 11pt;
-}
-.vimeoVid{
-  width: 90%;
-  max-width: 640px;
 }
