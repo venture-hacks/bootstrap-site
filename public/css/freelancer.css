@@ -684,6 +684,8 @@ footer .footer-below {
   height: 50px;
   border-radius: 100%;
   line-height: 28px;
+  background-color: white;
+  color: #00a63f;
 }
 .scroll-top .btn:focus {
   outline: none;
