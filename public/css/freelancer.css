@@ -968,3 +968,27 @@ table{
   width: 90%;
   max-width: 640px;
 }
+#reviews{
+  background-color: #343432;
+  color: white;
+}
+#reviews .review{
+  text-align: center;
+  padding: 10px;
+}
+#reviews img{
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  float: left;
+  margin-right: 10px;
+}
+#reviews .name{
+  text-transform: uppercase;
+  font-family: "Montserrat";
+}
+
+#reviews .person{
+  margin: auto;
+  width: 250px;
+}
