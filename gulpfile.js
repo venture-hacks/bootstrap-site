@@ -14,7 +14,6 @@ const usemin = require('gulp-usemin');
 const banner = ['/*!\n',
     ' * <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
     ' * Copyright 2016-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-    // ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
     ' */\n',
     ''
 ].join('');
@@ -62,7 +61,7 @@ gulp.task('clean', function() {
 });
 
 // Run everything
-gulp.task('default', sequence('scss', ['minify-css', 'minify-js']));
+gulp.task('default', sequence(['minify-css', 'minify-js']));
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {

@@ -81,6 +81,9 @@ hr.star-light:after {
 .red-star:after {
     background-color: #e83733;
 }
+.white-star:after {
+  background-color: white;
+}
 .gray-star:after {
     background-color: #343432;
 }
@@ -88,11 +91,11 @@ hr.star-light:after {
     background-color: #00a63f;
 }
 hr.star-primary {
-  border-color: #2C3E50;
+  border-color: #343432;
 }
 hr.star-primary:after {
   background-color: white;
-  color: #2C3E50;
+  color: #343432;
 }
 .img-centered {
   margin: 0 auto;
@@ -191,6 +194,12 @@ section.success {
     padding-top: 75px;
   }
 }
+
+#portfolio {
+  background-color: #343432;
+  color: white;
+}
+
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
@@ -251,7 +260,7 @@ section.success {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #18BC9C;
+  color: #00a63f;
   background: white;
   border: solid 2px white;
 }
@@ -299,7 +308,7 @@ section.success {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #18BC9C;
+  color: #00a63f;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -354,65 +363,7 @@ footer .footer-below {
 .scroll-top .btn:focus {
   outline: none;
 }
- .modal-content {
-  border-radius: 0;
-  background-clip: border-box;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
-  min-height: 100%;
-  padding: 100px 0;
-  text-align: center;
-}
- .modal-content h2 {
-  margin: 0;
-  font-size: 3em;
-}
-.modal-content img {
-  margin-bottom: 30px;
-}
-.modal-content .item-details {
-  margin: 30px 0;
-}
-.close-modal {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: transparent;
-  top: 25px;
-  right: 25px;
-  cursor: pointer;
-}
-.close-modal:hover {
-  opacity: 0.3;
-}
-.close-modal .lr {
-  height: 75px;
-  width: 1px;
-  margin-left: 35px;
-  background-color: #2C3E50;
-  transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  /* Safari and Chrome */
-  z-index: 1051;
-}
- .close-modal .lr .rl {
-  height: 75px;
-  width: 1px;
-  background-color: #2C3E50;
-  transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  /* Safari and Chrome */
-  z-index: 1052;
-}
- .modal-backdrop {
-  opacity: 0;
-  display: none;
-}
+
 body {
   overflow-x: hidden;
 }
@@ -427,7 +378,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #2c3e50;
+  color: #00a63f;
   outline: none;
 }
 h1,
@@ -874,8 +825,8 @@ background-color: #343432;
   text-decoration: none;
 }
 #mentors{
-  background-color: #343432;
-  color: white;
+  background-color: white;
+  color: #343432;
 }
 .person{
   font-size: 1.3em;

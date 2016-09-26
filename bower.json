@@ -23,6 +23,7 @@
     "autotrack": "^0.6.5",
     "font-awesome": "^4.6.3",
     "bootstrap": "^3.3.7",
-    "jquery-ui": "^1.12.1"
+    "jquery-ui": "^1.12.1",
+    "slick-carousel": "^1.6.0"
   }
 }
