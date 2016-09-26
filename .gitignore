@@ -3,3 +3,4 @@
 .idea
 public/bower_components/
 public/**/*.min.*
+node_modules/
