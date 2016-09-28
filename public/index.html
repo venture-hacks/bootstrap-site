@@ -16,7 +16,6 @@
 
     <!-- Slick CSS -->
     <link rel="stylesheet" type="text/css" href="/bower_components/slick-carousel/slick/slick.css"/>
-    // Add the new slick-theme.css if you want the default styling
     <link rel="stylesheet" type="text/css" href="/bower_components/slick-carousel/slick/slick-theme.css"/>
 
     <!-- Custom CSS -->
@@ -39,7 +38,7 @@
 <body id="page-top" class="index">
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -98,24 +97,28 @@
     </header>
 
     <section id="portfolio" class="portfolio-grid">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>About</h2>
                     <hr class="gray-star star-light">
                     <div class="row">
-                        <iframe src="https://player.vimeo.com/video/173172050" width="640" height="360" class="vimeoVid"
-                                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<br><br>
-                            <p>
-                                Venture Hacks is an ongoing series of hackathons sponsored by the
-                                <a href="http://www.stevensventurecenter.org/">Stevens Venture Center</a>.
-                                The Venture Center aims to redefine entrepreneurial education and support rising student
-                                entrepreneurs. This is our second edition and is focused solely on the youngest members
-                                of the Stevens community. We aims to empower smart, passionate and motivated people. We
-                                provide a space to not only build something awesome, but to collaborate and work through
-                                problems with amazing people.
-                            </p> <br/>
+                        <div class="col-md-2 hidden-sm"></div>
+                        <div class="col-md-8">
+                            <iframe src="https://player.vimeo.com/video/173172050" width="640" height="360" class="vimeoVid"
+                                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                <br><br>
+                                <p>
+                                    Venture Hacks is an ongoing series of hackathons sponsored by the
+                                    <a href="http://www.stevensventurecenter.org/">Stevens Venture Center</a>.
+                                    The Venture Center aims to redefine entrepreneurial education and support rising student
+                                    entrepreneurs. This is our second edition and is focused solely on the youngest members
+                                    of the Stevens community. We aim to empower smart, passionate and motivated people. We
+                                    provide a space to not only build something awesome, but to collaborate and work through
+                                    problems with amazing people.
+                                </p> <br/>
+                        </div>
+                        <div class="col-md-2 hidden-sm"></div>
                     </div>
                 </div>
             </div>
@@ -124,7 +127,7 @@
     </section>
 
     <section class="success" id="schedule">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Schedule</h2>
@@ -223,7 +226,7 @@
 
     <!-- Contact Section -->
     <section id="apply">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 style="color:white">Apply Here</h2>
@@ -245,7 +248,7 @@
 
     <!-- Mentor Grid Section -->
     <section id="mentors" class="portfolio-grid">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Mentors</h2>
@@ -253,29 +256,32 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12 text-center">
-                <img src="img/mentors.png" class="mentors-pic">
-                  <br>                  <br>
-                    <br>
+                <div class="col-md-2 hidden-sm"></div>
+                <div class="col-md-8 col-sm-12 text-center">
+                    <img src="img/mentors.png" class="mentors-pic">
+                    <br><br><br>
                     <p>
                         Austin and Francesca, the brains behind Venture Hacks, are excited to be back for the second edition. As young (and failed) entrepreneurs, they come with (mostly) smiling faces, ambitious ideas, and passion for educating the next wave of budding talent. After studying Computer Science for two years, starting a company, evading a lawsuit, and having (collectively) read about half of twelve books, they bring experience in design, programming, and of course entrepreneurship to the table. And now the brawns - Mukund has served as a mentor for Francesca, Austin, and many other (actually) successful entrepreneurs here at Stevens.
                     </p>
                 </div>
+                <div class="col-md-2 hidden-sm"></div>
             </div>
         </div>
     </section>
 
     <!-- Reviewers Section -->
     <section id="reviews" class="portfolio-grid">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Reviews</h2>
                     <hr class="star-light gray-star">
                 </div>
             </div>
+
             <div class="row">
-                <div class="reviews">
+                <div class="col-md-2 hidden-sm"></div>
+                <div class="reviews col-md-8">
                     <div>
                         <p class="review">"Being an EE I doubted my ability to do well at the competition. I think the biggest lesson I extracted was anything is possible with enough hard work."</p>
                         <div class="person">
@@ -328,6 +334,7 @@
                             </div>
                     </div>
                 </div>
+                <div class="col-md-2 hidden-sm"></div>
             </div>
         </div>
     </section>
@@ -337,7 +344,7 @@
     <!-- Footer -->
     <footer class="text-center">
         <div class="footer-above">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="footer-col col-md-4">
                         <h3 class="footer-header">Location</h3>
@@ -375,7 +382,7 @@
             </div>
         </div>
         <div class="footer-below">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         Copyright &copy; VentureHacks &amp; Stevens Institute of Technology 2016
