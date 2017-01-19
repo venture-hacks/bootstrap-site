@@ -1,4 +1,5 @@
 /*lolol howto overwrite: a css session */
+/* Deep red: f44336ff */
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #e83733;
 }
