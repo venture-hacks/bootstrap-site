@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> In </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <style>
+        * {
+            margin: auto;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        img {
+            margin-top: 20px;
+            margin-left: 0;
+        }
+
+        #basically_the_answer {
+            opacity: 1.0;
+            background-color: rgb(0,166,63);
+            width: 200px;
+            height: 200px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+        h1, h2, p {
+            opacity: .8;
+            color: white;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 5vw;
+        }
+
+        h2 {
+            font-size: 4vw;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 4em;
+            float: left;
+        }
+
+        form {
+            width: 300px;
+        }
+
+        form input {
+            border: none;
+            color: white;
+            text-align: left;
+            font-size: 3em;
+            width: 180px;
+            font-family: "Montserrat", sans-serif;
+            margin-top: 20px;
+            margin-left: -40px;
+            background-color: black;
+        }
+
+        form input:focus {
+            outline-width: 0;
+        }
+
+        .centered {
+            top: 0;
+            left: 0;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 100px;
+            text-align: center;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        footer p {
+            font-size: 1em;
+            opacity: .5;
+        }
+
+        a {
+            text-decoration: underline;
+            color: white;
+            -webkit-touch-callout: text;
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+        }
+
+        a::-moz-selection {
+            color: rgb(244,67,54);
+        }
+
+        a::selection {
+            color: rgb(244,67,54);
+        }
+
+        .outer {
+            display: table;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        .middle {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .inner {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            width: 90%;
+        }
+
+        #win a {
+            text-decoration: none;
+        }
+
+        #win a:hover {
+            opacity: .9;
+        }
+    </style>
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/jquery-ui/jquery-ui.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("footer").hide();
+            $("#win").hide();
+            $("#first").hide(0).delay(500).fadeIn(1500);
+            $("#first").delay(600).fadeOut(1500);
+            $("#second").hide(0).delay(4200).fadeIn(1500);
+            $("#second").delay(600).fadeOut(1500);
+            $("#puzzle").hide(0).delay(8000).fadeIn(1500, function () {
+                $("input").focus();
+                $("footer").fadeIn(1500);
+            });
+            $("form").submit(function (event) {
+                event.preventDefault();
+                var huh = whatsThis($("input").val());
+                if (huh && huh.x == 0 && huh.y == 166 && huh.z == 63) {
+                    $("#puzzle").hide()
+                    $("footer").hide()
+                    $("body").css("background-color", "rgb(0,166,63)");
+                    $("#win").fadeIn()
+                }
+                else {
+                    $("#puzzle").effect("shake");
+                    $("input").val("").delay(200)
+                }
+            })
+        });
+
+        // Hey. You. Whacha up to.
+        function whatsThis(yourGrandmasEmailPassword) {
+            var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(yourGrandmasEmailPassword);
+            return result ? {
+                x: parseInt(result[1], 16),
+                y: parseInt(result[2], 16),
+                z: parseInt(result[3], 16)
+            } : null;
+        }
+    </script>
+    <script>
+        window.ga = window.ga || function () {
+                    (ga.q = ga.q || []).push(arguments)
+                };
+        ga.l = +new Date;
+        ga('create', 'UA-79167973-1', 'auto');
+        ga('require', 'eventTracker');
+        ga('require', 'outboundLinkTracker');
+        ga('require', 'linkid');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <script async src='../bower_components/autotrack/autotrack.js'></script>
+</head>
+
+<body>
+<div class="outer">
+    <div class="middle">
+        <div class="inner">
+            <h1 id="first"> Space is limited. </h1>
+            <h1 id="second"> Is there another way in? </h1>
+            <div id="win">
+                <h1> Congrats. You did it. We like you. </h1>
+                <p style="font-size: 2vw; float: none;">E-mail <a href="mailto:hello@venturehacks.xyz">hello@venturehacks.xyz</a> with the
+                    solution to gain entry to <a href="/">Venture Hacks</a>.</p>
+            </div>
+            <div id="puzzle">
+                <div id="basically_the_answer"></div>
+                <form id="form">
+                    <p style="float:left">#</p>
+                    <input type="text" autofocus>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>Confused? Intrigued? <a href="mailto:hello@venturehacks.xyz" target="_blank">
+        hello@venturehacks.xyz
+    </a> <br>
+    </p>
+</footer>
+</body>
+</html>
