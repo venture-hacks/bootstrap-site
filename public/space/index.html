@@ -28,17 +28,18 @@
     </style>
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script>
+        var moveSpeed = 800;
+        var marsDiv;
       $(document).ready(function () {
+        marsDiv = $('.a');
         animateDiv();
-        console.log("hello");
-
       });
 
       function makeNewPosition() {
 
         // Get viewport dimensions (remove the dimension of the div)
-        var h = $(window).height() - 50;
-        var w = $(window).width() - 50;
+        var h = $(window).height() - marsDiv.height();
+        var w = $(window).width() - marsDiv.width();
 
         var nh = Math.floor(Math.random() * h);
         var nw = Math.floor(Math.random() * w);
@@ -49,7 +50,7 @@
 
       function animateDiv() {
         var newq = makeNewPosition();
-        $('.a').animate({top: newq[0], left: newq[1]}, 800, function () {
+        marsDiv.animate({ top: newq[0], left: newq[1] }, moveSpeed, function () {
           animateDiv();
         });
 
